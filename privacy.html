@@ -1,30 +1,170 @@
 <!DOCTYPE html>
-<html lang="zh-CN"> <!-- 若需英文，改为 en-US -->
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>口袋进销存 - 隐私政策</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口袋进销存 - 隐私政策 | Pocket Inventory - Privacy Policy</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #333; text-align: center; }
-        h2 { color: #444; margin-top: 20px; }
-        p { color: #666; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Microsoft YaHei", sans-serif;
+        }
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #007bff;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .lang-btn.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .zh-content { display: block; }
+        .en-content { display: none; }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        h2 {
+            margin: 25px 0 15px;
+            color: #444;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .update-time {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-    <h1>口袋进销存 隐私政策</h1>
-    <p>生效时间：2026年X月X日</p>
-    
-    <h2>1. 数据收集与存储</h2>
-    <p>您输入的商品名称、库存数量、出入库记录等数据，仅存储在您的设备本地，不会上传至服务器/第三方。</p>
-    <p>应用不会收集您的手机号、身份证、地理位置等敏感个人信息。</p>
-    
-    <h2>2. 广告相关（可选）</h2>
-    <p>后续为支撑应用维护，可能添加非干扰性广告服务，广告服务商可能获取设备广告标识符（AAID），仅用于个性化广告推荐，遵循 Google 隐私政策。</p>
-    
-    <h2>3. 数据控制权</h2>
-    <p>您可通过应用内「清除数据」功能删除所有本地存储的信息，删除后无法恢复。</p>
-    
-    <h2>4. 联系我们</h2>
-    <p>若有隐私相关问题，可通过应用内「设置-帮助中心」联系我们。</p>
+    <!-- 语言切换按钮 -->
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 隐私协议内容容器 -->
+    <div class="content">
+        <!-- 中文版本 -->
+        <div class="zh-content">
+            <h1>口袋进销存 隐私政策</h1>
+            <p class="update-time">生效时间：2026年2月9日</p>
+
+            <h2>1. 数据收集与存储</h2>
+            <p>1.1 主动输入的业务数据：您在使用本应用过程中输入的商品名称、库存数量、出入库记录、价格信息等数据，仅用于实现进销存核心功能，全部存储在您的移动设备本地，不会上传至本应用服务器、第三方平台或云端存储服务。</p>
+            <p>1.2 设备基础信息（可选）：若您后续选择开启广告服务，应用可能获取设备广告标识符（AAID），该信息仅用于个性化广告推荐（本地计算），不会传输至任何服务器；若未开启广告服务，应用不会获取任何设备标识信息。</p>
+            <p>1.3 敏感信息：本应用不会收集、存储您的手机号、身份证号、银行卡信息、地理位置、通讯录、照片等敏感个人信息。</p>
+
+            <h2>2. 数据使用与控制权</h2>
+            <p>2.1 数据使用范围：本地存储的业务数据仅用于您本人查看、编辑、导出库存信息，应用开发者无法查看、获取或修改您的任何本地数据。</p>
+            <p>2.2 数据删除：您可通过应用内「设置-清除数据」功能删除所有本地存储的信息，删除操作不可逆，数据删除后无法恢复。</p>
+            <p>2.3 数据备份：应用不提供自动备份功能，如需备份数据，请手动导出至设备本地文件夹。</p>
+
+            <h2>3. 广告服务（可选）</h2>
+            <p>为支撑应用持续维护与更新，本应用后续可能添加非干扰性广告服务（如原生广告、横幅广告）：</p>
+            <p>3.1 广告服务商：Google AdMob（谷歌）；</p>
+            <p>3.2 数据收集：广告服务商可能通过应用获取设备广告标识符（AAID），用于提供个性化广告推荐，遵循 Google 隐私政策；</p>
+            <p>3.3 选择权：您可通过设备系统设置关闭个性化广告推荐，或通过应用内功能关闭广告展示（若提供付费去广告服务）。</p>
+
+            <h2>4. 隐私政策的更新</h2>
+            <p>我们可能会根据业务调整或法规要求更新本隐私政策，更新后的政策将在应用内公示，继续使用应用即表示您同意更新后的政策。</p>
+
+            <h2>5. 联系我们</h2>
+            <p>若您对本隐私政策有任何疑问，可通过应用内「设置-帮助中心」提交反馈，我们将在7个工作日内回复。</p>
+        </div>
+
+        <!-- 英文版本 -->
+        <div class="en-content">
+            <h1>Pocket Inventory - Privacy Policy</h1>
+            <p class="update-time">Effective Date: February 9, 2026</p>
+
+            <h2>1. Data Collection and Storage</h2>
+            <p>1.1 Voluntarily Entered Business Data: Product names, inventory quantities, stock in/out records, price information and other data you enter while using the App are only used to implement core inventory management functions. All data is stored locally on your mobile device and will not be uploaded to the App's servers, third-party platforms, or cloud storage services.</p>
+            <p>1.2 Device Basic Information (Optional): If you choose to enable ad services in the future, the App may collect the Advertising ID (AAID) of your device. This information is only used for personalized ad recommendations (local calculation) and will not be transmitted to any server; if ad services are not enabled, the App will not collect any device identification information.</p>
+            <p>1.3 Sensitive Information: The App will not collect or store your sensitive personal information such as mobile phone number, ID card number, bank card information, geographic location, contacts, photos, etc.</p>
+
+            <h2>2. Data Usage and Control Rights</h2>
+            <p>2.1 Scope of Data Usage: Locally stored business data is only used for you to view, edit, and export inventory information. The App developer cannot view, access, or modify any of your local data.</p>
+            <p>2.2 Data Deletion: You can delete all locally stored information through the "Settings - Clear Data" function in the App. The deletion operation is irreversible, and data cannot be recovered after deletion.</p>
+            <p>2.3 Data Backup: The App does not provide automatic backup functionality. If you need to back up data, please manually export it to the local folder of your device.</p>
+
+            <h2>3. Ad Services (Optional)</h2>
+            <p>To support the continuous maintenance and update of the App, non-intrusive ad services (such as native ads, banner ads) may be added in the future:</p>
+            <p>3.1 Ad Service Provider: Google AdMob (Google);</p>
+            <p>3.2 Data Collection: The ad service provider may collect the device's Advertising ID (AAID) through the App to provide personalized ad recommendations, in accordance with Google's Privacy Policy;</p>
+            <p>3.3 Right of Choice: You can turn off personalized ad recommendations through your device's system settings, or disable ad display through in-App functions (if a paid ad-free service is provided).</p>
+
+            <h2>4. Updates to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy in accordance with business adjustments or regulatory requirements. The updated policy will be announced in the App, and your continued use of the App constitutes your agreement to the updated policy.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, you can submit feedback through "Settings - Help Center" in the App, and we will reply within 7 working days.</p>
+        </div>
+    </div>
+
+    <!-- 语言切换脚本 -->
+    <script>
+        // 切换语言函数
+        function switchLang(lang) {
+            // 隐藏所有内容
+            document.querySelector('.zh-content').style.display = 'none';
+            document.querySelector('.en-content').style.display = 'none';
+            // 移除所有按钮激活状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // 显示对应语言内容 + 激活按钮
+            if (lang === 'zh') {
+                document.querySelector('.zh-content').style.display = 'block';
+                document.querySelector('.lang-btn[onclick="switchLang(\'zh\')"]').classList.add('active');
+                document.documentElement.lang = 'zh-CN';
+            } else if (lang === 'en') {
+                document.querySelector('.en-content').style.display = 'block';
+                document.querySelector('.lang-btn[onclick="switchLang(\'en\')"]').classList.add('active');
+                document.documentElement.lang = 'en-US';
+            }
+        }
+
+        // 初始化：根据浏览器语言自动切换（可选）
+        window.onload = function() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('en')) {
+                switchLang('en');
+            } else {
+                switchLang('zh');
+            }
+        }
+    </script>
 </body>
 </html>
